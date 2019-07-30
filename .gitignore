@@ -1,0 +1,13 @@
+Makefile~
+CMakeFiles/
+CMakeCache.txt
+**/*~
+*.log
+**/.DS_Store
+.vscode/
+bin/
+lib/
+
+
+build/
+glfw/
