@@ -123,32 +123,59 @@ HelloWindow/fast:
 	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/build
 .PHONY : HelloWindow/fast
 
-main.o: main.cpp.o
+src/glad.o: src/glad.c.o
 
-.PHONY : main.o
+.PHONY : src/glad.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/glad.c.o:
+	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/src/glad.c.o
+.PHONY : src/glad.c.o
 
-main.i: main.cpp.i
+src/glad.i: src/glad.c.i
 
-.PHONY : main.i
+.PHONY : src/glad.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/glad.c.i:
+	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/src/glad.c.i
+.PHONY : src/glad.c.i
 
-main.s: main.cpp.s
+src/glad.s: src/glad.c.s
 
-.PHONY : main.s
+.PHONY : src/glad.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/glad.c.s:
+	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/src/glad.c.s
+.PHONY : src/glad.c.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWindow.dir/build.make CMakeFiles/HelloWindow.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... HelloWindow"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/glad.o"
+	@echo "... src/glad.i"
+	@echo "... src/glad.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
