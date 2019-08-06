@@ -19,5 +19,5 @@ target_link_libraries(ShadersUniform ${LIBRARIES})
 add_executable(ShadersInterpolation "${SRC_DIR}/shaders_interpolation.cpp" "${SRC_DIR}/glad.c")
 target_link_libraries(ShadersInterpolation ${LIBRARIES})
 
-add_executable(ShaderClass "${SRC_DIR}/shader_class.cpp" "${SRC_DIR}/glad.c" "${SRC_DIR}/3.3.shader.vs" "${SRC_DIR}/3.3.shader.fs")
+add_executable(ShaderClass "${SRC_DIR}/shader_class.cpp" "${SRC_DIR}/glad.c")
 target_link_libraries(ShaderClass ${LIBRARIES})
